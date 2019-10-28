@@ -11,3 +11,31 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.app {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.app__player {
+  flex-basis: 50%;
+  position: relative;
+  padding-top: 56.25% /* Player ratio: 100 / (1280 / 720) */
+}
+
+.app__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.app__progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.app__x-fade {
+  flex-basis: 100%;
+}
